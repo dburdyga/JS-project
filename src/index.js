@@ -103,11 +103,9 @@ var newSum = bindFunction(sum, 2, 4);
 
 console.log(newSum()) выведет 6
 */
-function bindFunction(F, a, b) {
 
-    F = F.bind(null, a, b);
-
-    return F;
+function bindFunction(fn) {
+    return fn.bind(this, ...[...arguments].splice(1));
 }
 
 export {
