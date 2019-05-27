@@ -19,15 +19,15 @@ function forEach(array, fn) {
  Посмотрите как работает map и повторите это поведение для массива, который будет передан в параметре array
  */
 function map(array, fn) {
-    let results = []; // 1
+    let results = [];
 
-    for (let i = 0; i < array.length; i++ ) { // 2
-        let item = fn(array[i], i, array); // 3
+    for (let i = 0; i < array.length; i++ ) {
+        let item = fn(array[i], i, array);
 
-        results.push(item); // 4
+        results.push(item);
     }
 
-    return results; // 5
+    return results;
 }
 
 /*
@@ -57,6 +57,14 @@ function reduce(array, fn, initial) {
    upperProps({ name: 'Сергей', lastName: 'Петров' }) вернет ['NAME', 'LASTNAME']
  */
 function upperProps(obj) {
+    var arr = [];
+
+    for (var key in obj) {
+        key = key.toUpperCase();
+        arr.push(key);
+    }
+
+    return arr;
 }
 
 /*
