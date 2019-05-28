@@ -99,17 +99,7 @@ function slice(array, from = 0, to = array.length) {
  Функция принимает объект и должна вернуть Proxy для этого объекта
  Proxy должен перехватывать все попытки записи значений свойств и возводить это значение в квадрат
  */
-
-const proxies = new WeakSet();
-
 function createProxy(obj) {
-    const handler = {};
-
-    const proxy = new Proxy(obj, handler);
-
-    proxies.add(proxy);
-
-    return proxy;
 }
 
 export {
