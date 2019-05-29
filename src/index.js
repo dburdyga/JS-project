@@ -75,8 +75,8 @@ function calculator() {
 /* При решении задач, пострайтесь использовать отладчик */
 
 export {
-    isAllTrue,
-    isSomeTrue,
-    returnBadArguments,
-    calculator
+	isAllTrue,
+	isSomeTrue,
+	returnBadArguments,
+	calculator
 };
