@@ -7,9 +7,9 @@
  Посмотрите как работает forEach и повторите это поведение для массива, который будет передан в параметре array
  */
 function forEach(array, fn) {
-    for (let i = 0; i < array.length; i++ ) {
-        fn(array[i], i, array);
-    }
+	for (let i = 0; i < array.length; i++ ) {
+		fn(array[i], i, array);
+	}
 }
 
 /*
@@ -19,15 +19,15 @@ function forEach(array, fn) {
  Посмотрите как работает map и повторите это поведение для массива, который будет передан в параметре array
  */
 function map(array, fn) {
-    let results = [];
+	let results = [];
 
-    for (let i = 0; i < array.length; i++ ) {
-        let item = fn(array[i], i, array);
+	for (let i = 0; i < array.length; i++ ) {
+		let item = fn(array[i], i, array);
 
-        results.push(item);
-    }
+		results.push(item);
+	}
 
-    return results;
+	return results;
 }
 
 /*
@@ -37,15 +37,15 @@ function map(array, fn) {
  Посмотрите как работает reduce и повторите это поведение для массива, который будет передан в параметре array
  */
 function reduce(array, fn, initial) {
-    let i = 0;
-    let result = initial || array[i++];
+	let i = 0;
+	let result = initial || array[i++];
 
-    while (i < array.length) {
-        result = fn(result, array[i], i, array);
-        i++;
-    }
+	while (i < array.length) {
+		result = fn(result, array[i], i, array);
+		i++;
+	}
 
-    return result;
+	return result;
 }
 
 /*
@@ -57,14 +57,14 @@ function reduce(array, fn, initial) {
    upperProps({ name: 'Сергей', lastName: 'Петров' }) вернет ['NAME', 'LASTNAME']
  */
 function upperProps(obj) {
-    var arr = [];
+	var arr = [];
 
-    for (var key in obj) {
-        key = key.toUpperCase();
-        arr.push(key);
-    }
+	for (var key in obj) {
+		key = key.toUpperCase();
+		arr.push(key);
+	}
 
-    return arr;
+	return arr;
 }
 
 /*
@@ -75,22 +75,22 @@ function upperProps(obj) {
  */
 
 function slice(array, from = 0, to = array.length) {
-    var array2 = [];
+	var array2 = [];
 
-    (from < 0 && Math.abs(from) > array.length)? from = 0:
-        (from < 0)? from = array.length + from:
-            (from > array.length)? from = array.length:
-                from;
+	(from < 0 && Math.abs(from) > array.length)? from = 0:
+		(from < 0)? from = array.length + from:
+			(from > array.length)? from = array.length:
+				from;
 
-    (to < 0 && Math.abs(to) < array.length)? to = array.length + to:
-        (to > array.length)? to = array.length:
-            to;
+	(to < 0 && Math.abs(to) < array.length)? to = array.length + to:
+		(to > array.length)? to = array.length:
+			to;
 
-    for (var i = from; i < to; i++) {
-        array2.push(array[i]);
-    }
+	for (var i = from; i < to; i++) {
+		array2.push(array[i]);
+	}
 
-    return array2;
+	return array2;
 }
 
 /*
@@ -103,10 +103,10 @@ function createProxy(obj) {
 }
 
 export {
-    forEach,
-    map,
-    reduce,
-    upperProps,
-    slice,
-    createProxy
+	forEach,
+	map,
+	reduce,
+	upperProps,
+	slice,
+	createProxy
 };
