@@ -105,19 +105,20 @@ function isSomeTrue(array, fn) {
    - fn не является функцией (с текстом "fn is not a function")
  */
 function returnBadArguments(fn) {
-	var x = new Array();
-	var z = '';
+	var arr = new Array();
+	var elem = '';
+
 	if (typeof fn != 'function') {
 		throw new Error('fn is not a function');
 	}
 	for (var i = 1; i < arguments.length; i++) {
 		try {
-			z = fn(arguments[i]);
+			elem = fn(arguments[i]);
 		} catch (e) {
-			x.push(arguments[i]);
+			arr.push(arguments[i]);
 		}
 	}
-	return x;
+	return arr;
 }
 
 /*
@@ -146,18 +147,12 @@ function calculator(number=0) {
 	var ob = {
 		sum: function () {
 			for (var i = 0; i < arguments.length; i++) {
-				if (arguments[i] === 0) {
-					throw new Error('division by 0');
-				}
 				number += arguments[i];
 			}
 			return number;
 		},
 		dif: function () {
 			for (var i = 0; i < arguments.length; i++) {
-				if (arguments[i] === 0) {
-					throw new Error('division by 0');
-				}
 				number -= arguments[i];
 			}
 			return number;
@@ -173,9 +168,6 @@ function calculator(number=0) {
 		},
 		mul: function () {
 			for (var i = 0; i < arguments.length; i++) {
-				if (arguments[i] === 0) {
-					throw new Error('division by 0');
-				}
 				number *= arguments[i];
 			}
 			return number;
