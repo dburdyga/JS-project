@@ -16,13 +16,18 @@
    isAllTrue([1, 2, 3, 4, 5], n => n < 10) // вернет true
    isAllTrue([100, 2, 3, 4, 5], n => n < 10) // вернет false
  */
+
+function isArray(array) {
+	return Object.prototype.toString.call( array ) === '[object Array]';
+}
+
 function isAllTrue(array, fn) {
 	var x = 0;
 	var y = 0;
 
-	if ( !Array.isArray(array) ) {
+	if( !isArray(array) ) {
 		throw new Error('empty array');
-	} else if ((Array.isArray(array)) && (array.length < 1)) {
+	} else if ((isArray(array)  && (array.length < 1))) {
 		throw new Error('empty array');
 	} else if (typeof fn != 'function') {
 		throw new Error('fn is not a function');
@@ -59,13 +64,14 @@ function isAllTrue(array, fn) {
    isSomeTrue([1, 2, 30, 4, 5], n => n > 20) // вернет true
    isSomeTrue([1, 2, 3, 4, 5], n => n > 20) // вернет false
  */
+
+
 function isSomeTrue(array, fn) {
-
 	var x = 0;
-
-	if ( !Array.isArray(array) ) {
+	
+	if( !isArray(array) ) {
 		throw new Error('empty array');
-	} else if ((Array.isArray(array)) && (array.length < 1)) {
+	} else if ((isArray(array)  && (array.length < 1))) {
 		throw new Error('empty array');
 	} else if (typeof fn != 'function') {
 		throw new Error('fn is not a function');
