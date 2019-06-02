@@ -20,7 +20,9 @@ function isAllTrue(array, fn) {
 	var x = 0;
 	var y = 0;
 
-	if (( array == 0 ) || (array.length <= 0)) {
+	if ( !Array.isArray(array) ) {
+		throw new Error('empty array');
+	} else if ((Array.isArray(array)) && (array.length < 1)) {
 		throw new Error('empty array');
 	} else if (typeof fn != 'function') {
 		throw new Error('fn is not a function');
@@ -61,7 +63,9 @@ function isSomeTrue(array, fn) {
 
 	var x = 0;
 
-	if (( array == 0 ) || (array.length <= 0)) {
+	if ( !Array.isArray(array) ) {
+		throw new Error('empty array');
+	} else if ((Array.isArray(array)) && (array.length < 1)) {
 		throw new Error('empty array');
 	} else if (typeof fn != 'function') {
 		throw new Error('fn is not a function');
