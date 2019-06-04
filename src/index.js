@@ -64,13 +64,13 @@ function findAllPSiblings(where) {
    findError(document.body) // функция должна вернуть массив с элементами 'привет' и 'loftschool'
  */
 function findError(where) {
-    var result = [];
+	var result = [];
 
-    for (var child of where.childNodes) {
-        result.push(child.innerText);
-    }
+	for (var child of where.childNodes) {
+		result.push(child.innerText);
+	}
 
-    return result;
+	return result;
 }
 
 /*
@@ -161,12 +161,12 @@ function observeChildNodes(where, fn) {
 }
 
 export {
-    createDivWithText,
-    prepend,
-    findAllPSiblings,
-    findError,
-    deleteTextNodes,
-    deleteTextNodesRecursive,
-    collectDOMStat,
-    observeChildNodes
+	createDivWithText,
+	prepend,
+	findAllPSiblings,
+	findError,
+	deleteTextNodes,
+	deleteTextNodesRecursive,
+	collectDOMStat,
+	observeChildNodes
 };
