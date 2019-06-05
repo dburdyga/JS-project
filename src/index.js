@@ -69,10 +69,10 @@ function once(target, fn) {
 }
 
 export {
-    addListener,
-    removeListener,
-    skipDefault,
-    emulateClick,
-    delegate,
-    once
+	addListener,
+	removeListener,
+	skipDefault,
+	emulateClick,
+	delegate,
+	once
 };

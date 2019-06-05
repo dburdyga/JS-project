@@ -43,17 +43,17 @@ function addListeners(target) {
 let addDivButton = homeworkContainer.querySelector('#addDiv');
 
 addDivButton.addEventListener('click', function() {
-    // создать новый div
-    const div = createDiv();
+	// создать новый div
+	const div = createDiv();
 
-    // добавить на страницу
-    homeworkContainer.appendChild(div);
-    // назначить обработчики событий мыши для реализации D&D
-    addListeners(div);
-    // можно не назначать обработчики событий каждому div в отдельности, а использовать делегирование
-    // или использовать HTML5 D&D - https://www.html5rocks.com/ru/tutorials/dnd/basics/
+	// добавить на страницу
+	homeworkContainer.appendChild(div);
+	// назначить обработчики событий мыши для реализации D&D
+	addListeners(div);
+	// можно не назначать обработчики событий каждому div в отдельности, а использовать делегирование
+	// или использовать HTML5 D&D - https://www.html5rocks.com/ru/tutorials/dnd/basics/
 });
 
 export {
-    createDiv
+	createDiv
 };
