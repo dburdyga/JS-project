@@ -29,7 +29,7 @@ const homeworkContainer = document.querySelector('#homework-container');
 function createDiv() {
 	let result = document.createElement('div');
 
-	result.className = "draggable-div";
+	result.className = 'draggable-div';
 }
 
 /*
