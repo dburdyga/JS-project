@@ -27,6 +27,9 @@ const homeworkContainer = document.querySelector('#homework-container');
    homeworkContainer.appendChild(newDiv);
  */
 function createDiv() {
+	let result = document.createElement('div');
+
+	result.className = "draggable-div";
 }
 
 /*
