@@ -36,7 +36,6 @@ function loadAndSortTowns() {
 		xhr.open('GET', 'https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json');
 		xhr.responseType = 'json';
 		xhr.addEventListener('load', () => {
-
 			resolve(xhr.response.sort(function (a, b) {
 				if (a.name > b.name) {
 					return 1;
