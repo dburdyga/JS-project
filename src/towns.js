@@ -63,10 +63,10 @@ const filterInput = homeworkContainer.querySelector('#filter-input');
 const filterResult = homeworkContainer.querySelector('#filter-result');
 
 filterInput.addEventListener('keyup', function() {
-    // это обработчик нажатия кливиш в текстовом поле
+	// это обработчик нажатия кливиш в текстовом поле
 });
 
 export {
-    loadTowns,
-    isMatching
+	loadTowns,
+	isMatching
 };
