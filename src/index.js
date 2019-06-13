@@ -51,6 +51,8 @@ function loadAndSortTowns() {
 	});
 }
 
+//let loadAndSortTowns = loadTowns;
+
 export {
 	delayPromise,
 	loadAndSortTowns
