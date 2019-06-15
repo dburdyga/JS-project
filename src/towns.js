@@ -1,4 +1,4 @@
-import {loadAndSortTowns} from './index';
+
 /*
  Страница должна предварительно загрузить список городов из
  https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json
@@ -38,9 +38,7 @@ const homeworkContainer = document.querySelector('#homework-container');
  https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json
  */
 
-function loadTowns() {
-	return townsPromise = loadAndSortTowns();
-}
+import { loadAndSortTowns as loadTowns } from './index';
 
 /*
  Функция должна проверять встречается ли подстрока chunk в строке full
