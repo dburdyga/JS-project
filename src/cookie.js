@@ -57,11 +57,7 @@ function getCookies() {
 }
 
 function isMatching(full, chunk) {
-	if (full.toLowerCase().indexOf(chunk.toLowerCase()) !== -1) {
-		return true;
-	} else {
-		return false;
-	}
+	return full.toLowerCase().indexOf(chunk.toLowerCase()) !== -1;
 }
 
 renderTable();
@@ -69,7 +65,7 @@ renderTable();
 listTable.addEventListener('click', function (e) {
 	console.log(e.target);
 	if (e.target.dataset.key) {
-		document.cookie = e.target.dataset.key + `=;expires=Thu, 01 Jan 1970 00:00:01 GMT;`;
+		document.cookie = e.target.dataset.key + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 	}
 	renderTable();
 });
