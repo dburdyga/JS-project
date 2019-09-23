@@ -1,9 +1,9 @@
 <application>
   <component name="DockerRegistry">
     <DockerRegistry email="Daria.Burdyga@t-systems.com">
-      <option name="address" value="registry.hub.docker.com" />
+      <option name="address" value="tlbcg-wbench.psst.t-online.corp" />
       <option name="name" value="Docker Registry" />
-      <option name="username" value="dburdyga" />
+      <option name="username" value="daria.burdyga" />
     </DockerRegistry>
   </component>
 </application>
