@@ -3,6 +3,7 @@
     <remote-server name="Docker" type="docker">
       <configuration>
         <option name="apiUrl" value="tcp://localhost:2375" />
+        <option name="certificatesPath" value="C:\Users\dburdyga\.docker\certs.d\tlbcg-wbench.wesp.telekom.net" />
       </configuration>
     </remote-server>
   </component>
