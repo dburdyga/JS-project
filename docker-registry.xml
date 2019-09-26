@@ -5,5 +5,10 @@
       <option name="name" value="TLabs" />
       <option name="username" value="daria.burdyga" />
     </DockerRegistry>
+    <DockerRegistry email="daria.burdyga@gmail.com">
+      <option name="address" value="registry.hub.docker.com" />
+      <option name="name" value="Docker Registry" />
+      <option name="username" value="burdyga" />
+    </DockerRegistry>
   </component>
 </application>
