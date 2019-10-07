@@ -5,7 +5,6 @@
       <mapping pattern="*.js.flow" type="Flow" />
       <mapping pattern="Using" type="PLAIN_TEXT" />
       <mapping pattern=".dockerignore" type="PLAIN_TEXT" />
-      <mapping ext="puml" type="PLAIN_TEXT" />
       <mapping ext="conf" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
