@@ -6,7 +6,7 @@
       <option name="username" value="daria.burdyga" />
     </DockerRegistry>
     <DockerRegistry email="daria.burdyga@external.trust2core.com">
-      <option name="address" value="gitlab.trust2core.com" />
+      <option name="address" value="registry.gitlab.trust2core.com" />
       <option name="name" value="Docker Registry" />
       <option name="username" value="daria.burdyga" />
     </DockerRegistry>
