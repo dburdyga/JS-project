@@ -8,6 +8,7 @@
       <mapping pattern="docker" type="PLAIN_TEXT" />
       <mapping pattern="IconDelete.vue" type="PLAIN_TEXT" />
       <mapping ext="conf" type="PLAIN_TEXT" />
+      <mapping ext="env" type="PLAIN_TEXT" />
       <mapping pattern="IconDelete" type="Vue.js" />
       <mapping pattern="git" type="XHTML" />
     </extensionMap>
