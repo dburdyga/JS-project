@@ -5,6 +5,7 @@
       <mapping pattern="Using" type="PLAIN_TEXT" />
       <mapping pattern=".dockerignore" type="PLAIN_TEXT" />
       <mapping pattern="docker" type="PLAIN_TEXT" />
+      <mapping pattern=".env.dev" type="PLAIN_TEXT" />
       <mapping pattern="IconDelete.vue" type="PLAIN_TEXT" />
       <mapping ext="env" type="PLAIN_TEXT" />
       <mapping ext="conf" type="PLAIN_TEXT" />
